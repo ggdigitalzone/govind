@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govind-porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: auto;
+        }
+        body{
+            width: 100%;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKEMJqn8Oua0EdZ_VQwi-pFKWdCTMtFCqn-A&usqp=CAU);
+            background-size: cover;
+            background-position: center;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav ul li, a{
+            list-style: none;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+        .nav ul li, a:hover{
+            color: orange;
+        }
+        .head h4{
+            font-size: 25px;
+            color: white;
+        }
+        #a{
+            color: white;
+        }
+        #aa{
+            color: white;
+            font-size: 60px;
+        }
+        #h{
+            color: skyblue;
+        }
+        .fa {
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        #btn{
+            border: 1px solid white;
+            border-radius: 20px;
+            background: rgb(24, 236, 233);
+            box-shadow: 5px 5px 5px rgb(24, 236, 233)
+                     5px 5px 5px rgb(24, 236, 233);     
+        }
+        .container{
+            width: 400px;
+            height: 350px;
+        }
+        .new{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 200px;
+        }
+        .containera{
+            border: 2px solid rgb(255, 247, 0);
+            border-radius: 1000px;
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+        .containera img{
+            padding-left: 70px;
+        }
+        @media only screen and (max-width:799px){
+            .new{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                padding: 15PX;
+                width: 100%;
+            }
+            .nav ul li, a{
+                font-size: 18px;
+            }
+        }
+        @media only screen and (max-width:520px){
+            .nav ul li, a{
+                font-size: 12px;
+                padding: 4px;
+            }
+            .head h4{
+                font-size: 13px;
+            }
+        }
+        .i{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .about{
+            background-color: white;
+        }
+        .skillcontainer{
+            border: 2px solid black;
+            width: 400px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        .point{
+            border: 1px solid black;
+            width: 350px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointa{
+            border: 1px solid black;
+            width: 310px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointb{
+            border: 1px solid black;
+            width: 220px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointc{
+            border: 1px solid black;
+            width: 170px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointd{
+            border: 1px solid black;
+            width: 170px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointe{
+            border: 1px solid black;
+            width: 120px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .skill{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .request{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call{
+  border: 3px solid rgb(0, 0, 0);
+  width: 500px;
+  height: 460px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+.call img{
+  width: 496px;
+  height: 450px;
+}
+.call input{
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+#text{
+  padding: 15px;
+}
+#btt{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(253, 253, 253);
+}
+#btt:hover{
+  background-color: orangered;
+  color: white;
+}
+@media only screen and (max-width:1009px){
+  .request{
+    display: grid;
+  }
+}
+@media only screen and (max-width:525px){
+  .call{
+    width: 350px;
+  }
+  .call img{
+    width: 346px;
+  }
+}
+@media only screen and (max-width:355px){
+  .call{
+    width: 300px;
+  }
+  .call img{
+    width: 296px;
+  }
+  .call input{
+    width: 200px;
+  }
+  .call textarea{
+    width: 200px;
+  }
+}
+.foll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(44, 47, 49);
+}
+@media only screen and (max-width:409px){
+    .skillcontainer{
+            border: 2px solid black;
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        .point{
+            border: 1px solid black;
+            width: 250px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointa{
+            border: 1px solid black;
+            width: 210px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointb{
+            border: 1px solid black;
+            width: 120px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointc{
+            border: 1px solid black;
+            width: 70px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointd{
+            border: 1px solid black;
+            width: 70px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .pointe{
+            border: 1px solid black;
+            width: 30px;
+            height: 37px;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="head">
+            <h4>Govind Jha</h4>
+            <div class="nav">
+             <ul>
+                <li><a href="#a">Home</a></li>
+                <li><a href="#ab">About</a></li>
+                <li><a href="#sk">Skills</a></li>
+                <li><a href="#co">Contact</a></li>
+             </ul>
+            </div>
+        </div>
+
+    </header>
+    <section>
+         
+        <div class="new">
+        <div class="containera">
+            <img src="photo.png" alt="photo" width="250px">
+        </div>
+        <div class="container">
+             <h1 id="a">Hello, it's Me</h1>
+             <h1 id="aa">Govind Jha</h1>
+             <h1 id="a">And i'm a <a href="#" id="h">Web Devloper</a></h1>
+             <br>
+             <p style="color: white;">Hello guys i am a web devloper. my skills is front-end and back-end</p>
+             <br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <br>
+                <br>
+                <a href="#" id="btn">Download CV</a>
+        </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <hr>
+        <div class="about">
+
+            <br>
+            <center><b><h1 style="font-size: 55px; color: rgb(0, 0, 0);" id="ab">About Us</h1></b></center>
+            <br>
+            <div class="i">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSB7oN9tKHNR7flccAPPfrGn5Dr70RrRQ3GA&usqp=CAU" alt="image" width="260px">
+        </div>
+            <br>
+            <p style="padding: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quia voluptates dolorum ex, reiciendis soluta esse dolore harum perferendis fuga, voluptatum quaerat ab unde est quibusdam nesciunt non excepturi minima.
+            Voluptatem, laudantium! Similique vel, quam fugiat ab amet explicabo fuga sint dolorum tempora, reiciendis incidunt, accusantium consectetur nam odit ad vero veritatis doloribus id dignissimos iste. Nihil accusamus sit laboriosam?
+            Dolore itaque quis, sequi hic vero voluptas. Consectetur libero officiis doloribus officia odio laudantium rerum, natus voluptate aliquam, sint delectus illum? Sequi ipsa officiis corporis omnis? Vitae quos dolor ratione?
+            Hic nulla dolor voluptas tenetur eaque! Perspiciatis, accusamus. Doloremque perspiciatis praesentium ullam. Sequi, iusto sed officia suscipit tempora harum dignissimos temporibus itaque tenetur! Rem eveniet nesciunt molestiae sapiente cum nobis!
+            Nisi quia voluptas blanditiis architecto asperiores fugiat et delectus distinctio unde, nemo animi voluptate rem tenetur qui nihil, ut magnam a doloribus laudantium. Deserunt necessitatibus ex commodi nihil in itaque!
+            Minus sint architecto culpa dolor fuga qui voluptatum cumque maiores veritatis odio, quisquam enim. Blanditiis rem praesentium reiciendis, iusto quod magnam laudantium? Quibusdam quos atque perferendis illum tenetur, mollitia quis.
+            A eius et facere repellendus perferendis totam mollitia numquam quod officia architecto enim reprehenderit amet, ipsa delectus ipsum magnam fugit dignissimos sapiente? Porro fugiat expedita facilis. Facere quibusdam minima itaque.
+            Sit ab veritatis voluptatem earum, culpa dicta, fugiat laborum consectetur, et recusandae sunt adipisci nesciunt iusto fugit unde amet quia obcaecati reiciendis aliquid in. Voluptas ratione iusto soluta nam veritatis.
+            Consequuntur saepe eum rem possimus sunt distinctio magnam cumque nulla amet, placeat molestiae vitae ducimus harum assumenda porro mollitia accusantium enim iure quasi eligendi aspernatur cupiditate esse! Voluptatibus, voluptate? Sed.
+            Velit culpa, blanditiis quam quas, officia sint repudiandae, debitis eligendi aut officiis ex consequuntur molestias atque in pariatur ut. Voluptatibus quam ipsam repellat unde, excepturi repudiandae? Exercitationem hic qui odit!</p>
+        </div>
+
+        <hr>
+        <br>
+        <br>
+
+        <div class="skills">
+            <br>
+            <br>
+            <center><b><h1 style="font-size: 55px; color: rgb(255, 255, 255);" id="sk">My Skills</h1></b></center>
+            <br>
+            <br>
+            <div class="skill">
+                <br>
+                <div class="skillcontainer">
+                    <div class="point">HTML</div>
+                </div>
+                <br>
+                <div class="skillcontainer">
+                    <div class="pointa">CSS</div>
+                </div>
+                <br>
+                <div class="skillcontainer">
+                    <div class="pointb">JAVASCRIPT</div>
+                </div>
+                <br>
+                <div class="skillcontainer">
+                    <div class="pointc">PHP</div>
+                </div>
+                <br>
+                <div class="skillcontainer">
+                    <div class="pointd">SQL</div>
+                </div>
+                <br>
+                <div class="skillcontainer">
+                    <div class="pointe">WORDPRESS</div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <marquee behavior="" direction="">
+                <img src="https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png" alt="html,css,javascript" height="200px">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/PHP_1.png" alt="php,sql" height="200px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaWtoXyXM4A95RQ9_1YpDvw_aEZN_O1T_TnwlyMBAA28L5QRd12r7cdVxnA8RrA8efDxM&usqp=CAU" alt="wordpress" height="200px">
+            </marquee>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            
+
+        </div>
+
+        <div class="contact">
+
+            <br>
+            <br>
+            <center><b><h1 style="color: white; font-size: 55px;" id="co">Contact Us</h1></b></center>
+            <br>
+            <br>
+
+            <div class="request">
+                <div class="call">
+                  <br>
+                  <b><h2 style="text-align: start; padding: 8px; color: white;">Request a Call Back</h2></b>
+                  <br>
+                  <input type="text" id="text" placeholder="Name">
+                  <br>
+                  <input type="text" id="text" placeholder="Email">
+                  <br>
+                  <input type="text" id="text" placeholder="Phone">
+                  <br>
+                  <textarea style="border-radius: 20px;" name="Text" id="text" cols="30" rows="8" placeholder="Message"></textarea>
+                  <br>
+                  <a id="btt" href="#">Submit Now</a>
+                  <br>
+                </div>
+                <div class="call">
+                  <img src="https://pankajtaxation.com/wp-content/uploads/2021/11/blog4.jpg" alt="img">
+                </div>
+              </div>
+<br>
+<br>
+
+        </div>
+
+    </section>
+    <footer>
+        
+        <div class="foll">
+            <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+
+        <center><h3 style="color: white;">made by  gg digital zone</h3></center>
+
+        <center><h4 style="color: white;">&copy copyright 2024 // all rights resvered by govind</h4></center>
+<br>
+
+    </footer>
+</body>
+</html>
